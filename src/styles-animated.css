@@ -710,13 +710,21 @@ button:focus{
         padding-right: 10%;
         padding-left: 10%;
         place-items: stretch;
-        gap: 30px;
+        gap: 15px;
     }
 
     #Botones a {
         width: 100%;
         height: 100px;
         margin: 0;
+    }
+
+    #Botones a:hover {
+        width: 100%;
+        height: 100px;
+        transform: scale(95%);
+        margin: 0;
+        transition: 0.3s;
     }
     
     #CV { font-size: 30px; }
