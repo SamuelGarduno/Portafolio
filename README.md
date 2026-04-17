@@ -26,5 +26,5 @@ Build Tool: Vite
 
 Estilos: CSS3 (Custom Properties y Flexbox/Grid)
 
-Despliegue sugerido: GitHub Pages
+Despliegue: GitHub Pages
 

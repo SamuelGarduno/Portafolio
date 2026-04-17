@@ -79,7 +79,7 @@ function App() {
                 <a id="Linkedin" href="https://www.linkedin.com/in/samuel-garduño-gamboa-a93a703a2/"><i class="fi fi-brands-linkedin"></i></a>
                 <a id="Github" href='https://github.com/SamuelGarduno'><i class="fi fi-brands-github"></i></a>
                 <a id="Correo" href="#Contacto"><i className="fi fi-sr-envelope"></i></a>
-                <a id="CV">CV</a>
+                <a id="CV" href={`${import.meta.env.BASE_URL}Currículum Vitae Samuel Garduño Gamboa.pdf`} target="_blank" rel="noopener noreferrer">CV</a>
             </div>
         </div>
         <div className="SobreMi seccion-menu" id="SobreMi">
