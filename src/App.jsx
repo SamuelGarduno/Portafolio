@@ -9,10 +9,8 @@ function App() {
 
   const [offsetY, setOffsetY] = useState(0);
 
-// En App.jsx modifica el useEffect del scroll:
     useEffect(() => {
         const handleScroll = () => {
-        // Usamos window.scrollY que es el estándar
         setOffsetY(window.scrollY);
         };
 

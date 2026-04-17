@@ -9,15 +9,14 @@ const Navbar = () => {
   const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // En móviles y desktop, si la sección entra en el área
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
       {
-        root: null, // Observa el viewport global
-        rootMargin: "-45% 0px -45% 0px", // Una franja del 10% en el centro de la pantalla
+        root: null, 
+        rootMargin: "-45% 0px -45% 0px", 
         threshold: 0 
       }
     );

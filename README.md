@@ -1,5 +1,5 @@
     
-    Samuel GG | Personal Portfolio
+# Samuel GG | Personal Portfolio
 
 Este es mi portafolio profesional, diseñado para exhibir mis proyectos y capacidades técnicas como desarrollador Front-End. El sitio prioriza la estética minimalista y una experiencia de usuario fluida.
 
