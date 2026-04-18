@@ -1,11 +1,18 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+const honeypotStyle = { display: 'none' };
+
 const ContactForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (e.target.address.value) {
+      console.log("Bot detectado");
+      return; 
+    }
 
     emailjs.sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID, 
@@ -25,6 +32,7 @@ const ContactForm = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
+      <input type="text" name="address" style={honeypotStyle} tabIndex="-1" autoComplete="off" />
       <label>Nombre</label>
       <input type="text" name="from_name" placeholder='Nombre' required />
       
